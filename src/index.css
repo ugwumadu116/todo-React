@@ -1,0 +1,224 @@
+html,
+body {
+  background: #ffe8eb;
+  font-family: sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+}
+#heading {
+  display: flex;
+  background: #f00013;
+  color: white;
+  font-size: 20px;
+  padding: 20px 10px;
+}
+#heading .right {
+  margin-left: auto;
+}
+#heading .left img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+#heading .left span {
+  position: relative;
+  top: -15px;
+  margin-left: 10px;
+}
+#heading .right {
+  position: relative;
+  top: 15px;
+  color: #f00013;
+}
+#heading .right span {
+  border-radius: 50%;
+  background: white;
+  padding: 10px;
+  margin-left: 10px;
+}
+#main {
+  margin: 40px;
+}
+#main .search {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  padding: 0px 5px 0px 20px;
+}
+#main .search input {
+  flex: 1;
+  font-size: 1.3rem;
+  color: #b0b0b0;
+  padding: 3px 10px;
+  border-radius: 15px;
+  border: 2px solid #f00013;
+  transition: all 0.5s ease-in-out;
+}
+#main .search i {
+  font-size: 1.3rem;
+  position: relative;
+  left: -30px;
+  top: 4px;
+  color: #b0b0b0;
+}
+#main .Inbox a,
+#main .Films a,
+#main .Purchases a,
+#main .Work a,
+#main .Today a,
+#main .Starred a,
+#main .Assigned a {
+  display: flex;
+  justify-content: center;
+  padding: 5px 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #695d5e;
+  margin-top: 20px;
+}
+#main a:hover {
+  border-left: #f00013 solid;
+}
+#main .Inbox i {
+  color: #f00013;
+}
+#main .Inbox .Inbox-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Assigned .Assigned-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Assigned i {
+  color: #f00013;
+}
+#main .Starred .Starred-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Starred i {
+  color: #f00013;
+}
+#main .Today i {
+  color: #f00013;
+}
+#main .Today .Today-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Work .Work-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Work i {
+  color: #000000;
+}
+#main .Purchases .Purchases-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Purchases i {
+  color: #000000;
+}
+#main .Films .Films-text {
+  flex: 1;
+  padding-left: 10px;
+}
+#main .Films i {
+  color: #000000;
+}
+#Todo .add {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+#Todo .add .fa-plus {
+  background: #f00013;
+  border-radius: 60%;
+  padding: 10px;
+  color: #ffe8eb;
+}
+#Todo .form {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: grey;
+}
+#Todo .form .formHeader {
+  margin: 30px 90px;
+  padding: 20px 0px;
+  display: flex;
+  color: #ffe8eb;
+  font-size: 20px;
+}
+#Todo .form .formHeader .addnew {
+  margin: auto;
+  color: white;
+}
+#Todo .form .formLogo {
+  display: flex;
+  justify-content: center;
+}
+#Todo .form .formLogo i {
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px;
+  background: #ffe8eb;
+}
+#Todo form > div {
+  display: flex;
+  justify-content: center;
+}
+#Todo form {
+  margin-top: 40px;
+}
+#Todo form input,
+#Todo form select {
+  border-style: none none solid none;
+  background: transparent;
+}
+#Todo .form input[type="text"] {
+  width: 50%;
+  font-size: 20px;
+  border-bottom: #ffe8eb 2px solid;
+}
+#Todo .form input[type="date"] {
+  width: 50%;
+  font-size: 20px;
+  margin-top: 30px;
+  border-bottom: #ffe8eb 2px solid;
+}
+#Todo .form select {
+  width: 50%;
+  margin-top: 30px;
+  color: black;
+  font-size: 20px;
+  border-bottom: #ffe8eb 2px solid;
+}
+#Todo .form button {
+  width: 50%;
+  margin: 30px 0px;
+  font-size: 20px;
+  background: #ffe8eb;
+  border-radius: 15px;
+}
+
+@media (min-width: 1200px) {
+  #main {
+    margin: 60px 300px;
+  }
+  #Todo {
+    margin: 0px 300px;
+  }
+}
